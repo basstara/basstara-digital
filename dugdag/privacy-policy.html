@@ -3,96 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kebijakan Privasi - DugDag Studio</title>
+    <title>Kebijakan Privasi & Ketentuan Layanan - Dugdag</title>
     <style>
+        :root {
+            --primary-color: #00E5FF;
+            --text-main: #2c3e50;
+            --text-muted: #555555;
+            --bg-body: #f4f6f8;
+            --bg-card: #ffffff;
+            --border-color: #eef2f5;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-body);
             margin: 0;
             padding: 0;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 760px;
             margin: 40px auto;
-            background: #ffffff;
+            background: var(--bg-card);
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
+
         h1 {
-            color: #1a1a1a;
-            font-size: 28px;
-            border-bottom: 2px solid #00E5FF;
-            padding-bottom: 10px;
+            color: #111111;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: #111111;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #1a252f;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: #777777;
             margin-bottom: 30px;
         }
-        h2 {
-            color: #2c3e50;
-            font-size: 20px;
-            margin-top: 30px;
-        }
+
         p, li {
             font-size: 15px;
-            color: #555;
+            color: var(--text-muted);
+            text-align: justify;
         }
+
         ul {
             padding-left: 20px;
+            margin-bottom: 20px;
         }
+
+        li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
         .highlight {
             background-color: #e0f7fa;
-            padding: 2px 6px;
+            padding: 3px 8px;
             border-radius: 4px;
             font-weight: 600;
-            color: #00838f;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+            color: #006064;
             font-size: 14px;
+        }
+
+        a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
             text-align: center;
-            color: #777;
+            color: #999999;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                padding: 24px;
+                border-radius: 0;
+            }
+            h1 { font-size: 26px; }
+            h2 { font-size: 20px; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Kebijakan Privasi</h1>
-    <p><strong>Berlaku Efektif:</strong> 16 Juni 2026</p>
+    <h1>Dokumen Hukum Pengguna</h1>
+    <div class="effective-date"><strong>Berlaku Efektif:</strong> 16 Juni 2026<br><strong>Produk:</strong> Dugdag (com.dugdag.studio)<br><strong>Pengembang:</strong> Basstara Digital</div>
     
-    <p><strong>Basstara Digital</strong> menghormati privasi Anda. Dokumen ini menguraikan secara transparan bagaimana kami mengelola informasi dan izin perangkat saat Anda menggunakan aplikasi seluler <strong>DugDag Studio</strong>.</p>
+    <p>Dokumen ini mencakup Kebijakan Privasi, Ketentuan Layanan, dan Atribusi Lisensi Pihak Ketiga untuk aplikasi seluler <strong>Dugdag</strong> yang dikembangkan dan didistribusikan oleh <strong>Basstara Digital</strong>.</p>
 
-    <h2>1. Pemrosesan Media Lokal (Offline-First)</h2>
-    <p>Aplikasi ini dirancang sebagai platform Digital Audio Workstation (DAW) dan rendering visualizer profesional. Seluruh pemrosesan media (pemotongan gambar, pembacaan spektrum audio, dan rendering video MP4) dieksekusi secara lokal di dalam memori internal perangkat Anda. Kami tidak pernah mengunggah, merekam, atau mentransmisikan file media maupun proyek Anda ke server eksternal.</p>
+    <h2>I. Kebijakan Privasi</h2>
+    
+    <h3>1. Pemrosesan Data Luring (Offline-First)</h3>
+    <p>Dugdag dirancang sebagai platform perenderan visualizer dan penyuntingan media yang beroperasi sepenuhnya di dalam perangkat keras Anda. Seluruh pemrosesan grafik dan perhitungan spektrum audio (FFT) dieksekusi secara lokal. Basstara Digital <strong>tidak pernah</strong> mengunggah, merekam, atau mentransmisikan data profil, riwayat putar audio, file gambar, maupun berkas video (MP4) Anda ke server eksternal apa pun.</p>
 
-    <h2>2. Izin Perangkat (Permissions) yang Digunakan</h2>
-    <p>Untuk memastikan fungsionalitas inti berjalan dengan semestinya, aplikasi memerlukan izin sistem Android berikut:</p>
+    <h3>2. Izin Perangkat (Permissions)</h3>
+    <p>Aplikasi mewajibkan izin sistem Android berikut secara ketat untuk fungsionalitas inti:</p>
     <ul>
-        <li><span class="highlight">Penyimpanan & Media (READ_EXTERNAL_STORAGE, READ_MEDIA_AUDIO, IMAGES, VIDEO, & VISUAL_USER_SELECTED):</span> Izin ini digunakan secara ketat dan eksklusif untuk membaca aset (lagu, foto latar belakang, logo, dan font) yang Anda pilih secara sadar untuk dimasukkan ke dalam ruang kerja, serta menyimpan hasil akhir video (MP4) ke dalam Galeri perangkat Anda.</li>
-        <li><span class="highlight">Mikrofon (RECORD_AUDIO & MODIFY_AUDIO_SETTINGS):</span> Izin ini <strong>mutlak diperlukan oleh mesin perender kami (Native Render Engine)</strong> untuk mengekstrak data frekuensi gelombang suara (Fast Fourier Transform / FFT) dari lagu yang sedang diputar di dalam aplikasi. Ini berfungsi secara murni agar animasi bar atau spektrum dapat bergerak responsif terhadap ketukan lagu. Kami tidak merekam pembicaraan Anda atau menyadap suara lingkungan di sekitar perangkat Anda dalam bentuk apa pun.</li>
-        <li><span class="highlight">Akses Internet (INTERNET):</span> Aplikasi membutuhkan koneksi internet hanya untuk memverifikasi lisensi pembelian dan memuat layanan jaringan periklanan pihak ketiga.</li>
+        <li><span class="highlight">Akses Media & Penyimpanan (READ/WRITE):</span> Eksklusif untuk membaca aset musik dan foto yang Anda pilih secara manual, serta menyimpan video hasil render akhir langsung ke memori internal perangkat Anda.</li>
+        <li><span class="highlight">Akses Mikrofon/Audio (RECORD_AUDIO):</span> Izin ini mutlak digunakan oleh sistem <em>Native Render Engine</em> kami secara terisolasi hanya untuk mengekstrak frekuensi gelombang dari lagu yang sedang dimainkan di dalam aplikasi. Aplikasi ini tidak memiliki kemampuan untuk menyadap atau merekam percakapan lingkungan pengguna.</li>
+        <li><span class="highlight">Layanan Latar Belakang (FOREGROUND_SERVICE_MEDIA_PLAYBACK):</span> Izin ini digunakan secara eksklusif agar aplikasi dapat terus memutar file audio atau musik Anda secara stabil di latar belakang meskipun aplikasi sedang diminimalkan (dimuat dengan notifikasi pemutar media yang terlihat oleh pengguna).</li>
+        <li><span class="highlight">Akses Internet:</span> Terbatas untuk memverifikasi lisensi pembayaran Google Play Billing dan penayangan iklan dari jaringan AdMob.</li>
     </ul>
 
-    <h2>3. Layanan Pihak Ketiga & Pengumpulan Data</h2>
-    <p>Meskipun file media Anda diproses secara lokal, aplikasi ini terintegrasi dengan layanan pihak ketiga resmi yang dapat mengumpulkan data pengenal anonim untuk tujuan keamanan, analitik, dan periklanan:</p>
+    <h3>3. Layanan Pihak Ketiga & Data Anonim</h3>
+    <p>Aplikasi ini mengintegrasikan Google AdMob untuk penayangan iklan, yang dapat mengumpulkan data telemetri anonim (seperti ID Perangkat dan IP) untuk personalisasi iklan. Transaksi dalam aplikasi dikelola penuh oleh Google Play Billing; Basstara Digital tidak pernah memproses informasi kartu kredit pengguna. Rincian perlindungan data tersebut tunduk pada <a href="https://policies.google.com/privacy" target="_blank">Kebijakan Privasi Google</a>.</p>
+
+    <h3>4. Penghapusan Data</h3>
+    <p>Karena Dugdag beroperasi tanpa sistem registrasi akun (No Login), kami tidak memiliki basis data pengguna di server kami. Anda memiliki kendali penuh dan dapat menghapus seluruh pengaturan, draf, dan file aplikasi secara permanen dengan melakukan fungsi <strong>"Hapus Data" (Clear Data)</strong> melalui pengaturan sistem Android atau dengan mencopot pemasangan aplikasi.</p>
+
+    <h2>II. Syarat & Ketentuan Layanan</h2>
+    
+    <h3>1. Konten Buatan Pengguna (UGC)</h3>
+    <p>Dugdag disediakan "sebagaimana adanya" sebagai utilitas penyuntingan kreatif. Pengguna bertanggung jawab mutlak secara hukum atas setiap aset musik, lirik, atau gambar yang dimuat ke dalam aplikasi. Basstara Digital membebaskan diri dari segala tuntutan hukum terkait pelanggaran hak cipta atas video yang diekspor, dipublikasikan, atau didistribusikan oleh pengguna akhir.</p>
+
+    <h3>2. Kinerja & Penafian (Disclaimer)</h3>
+    <p>Kecepatan dan stabilitas proses rendering (ekspor) sangat bergantung pada kapasitas memori (RAM) dan spesifikasi prosesor (CPU/GPU) perangkat Android pengguna. Basstara Digital tidak dapat dimintai pertanggungjawaban atas kegagalan kompilasi video (crash) yang disebabkan oleh keterbatasan spesifikasi perangkat keras pengguna.</p>
+
+    <h2>III. Atribusi Lisensi Sumber Terbuka</h2>
+    <p>Infrastruktur aplikasi Dugdag dibangun dengan menggunakan teknologi, kerangka kerja, dan pustaka kode sumber terbuka berikut. Seluruh hak cipta dan merek dagang adalah milik pemilik aslinya dan dilindungi di bawah lisensi masing-masing (seperti Apache 2.0 dan MIT):</p>
     <ul>
-        <li><strong>Google AdMob:</strong> Aplikasi ini menayangkan iklan. Jaringan iklan Google AdMob dapat mengumpulkan data seperti Alamat IP, ID Perangkat (Advertising ID), dan interaksi klik iklan untuk menyediakan iklan yang dipersonalisasi serta menganalisis performa lalu lintas jaringan.</li>
-        <li><strong>Google Play Billing:</strong> Digunakan secara eksklusif jika Anda melakukan transaksi peningkatan lisensi (Premium Upgrade). Seluruh proses penagihan dikelola oleh Google. Kami tidak pernah menerima, memproses, atau menyimpan informasi kartu kredit dan data pembayaran Anda secara langsung.</li>
+        <li><strong>Android Open Source Project (AOSP) & NDK</strong> (Hak Cipta &copy; Google LLC)</li>
+        <li><strong>Android Jetpack Compose UI</strong> (Hak Cipta &copy; Google LLC)</li>
+        <li><strong>Kotlin Standard Library</strong> (Hak Cipta &copy; JetBrains s.r.o.)</li>
     </ul>
-    <p>Untuk informasi lebih lanjut mengenai praktik keamanan data tersebut, silakan tinjau <a href="https://policies.google.com/privacy" target="_blank">Kebijakan Privasi Google</a>.</p>
+    <p><em>Pustaka pihak ketiga di atas disediakan "sebagaimana adanya" sesuai dengan ketentuan lisensi asli tanpa modifikasi hak kepemilikan.</em></p>
 
-    <h2>4. Kebijakan Retensi dan Penghapusan Data (Data Deletion)</h2>
-    <p>Aplikasi ini beroperasi tanpa sistem pembuatan akun (no login required). Oleh karena itu, kami tidak memiliki basis data pengguna di server kami untuk dihapus. Semua data proyek, draf, dan file cache bersifat sementara dan tersimpan secara eksklusif di dalam memori perangkat Anda. Anda memiliki kendali penuh dan dapat menghapus seluruh data ini kapan saja dengan melakukan fungsi <strong>"Hapus Data Aplikasi" (Clear Data)</strong> melalui pengaturan sistem Android Anda, atau dengan melakukan pencopotan pemasangan (Uninstall) aplikasi.</p>
-
-    <h2>5. Perlindungan Privasi Anak (COPPA Compliance)</h2>
-    <p>DugDag Studio adalah alat penyuntingan audio dan visual tingkat lanjut yang dirancang untuk kreator konten profesional. Aplikasi ini tidak ditujukan untuk, dan tidak secara sengaja mengumpulkan informasi identitas pribadi dari, anak-anak di bawah usia 13 tahun.</p>
-
-    <h2>6. Hubungi Kami</h2>
-    <p>Jika Anda memiliki pertanyaan mendetail mengenai praktik privasi ini atau kendala teknis, silakan hubungi tim pengembang secara langsung melalui:</p>
-    <p><strong>Email:</strong> info.basstaradigital@gmail.com </p>
+    <h2>IV. Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan teknis atau kekhawatiran terkait privasi aplikasi Dugdag, Anda dapat menghubungi tim Basstara Digital melalui alamat surel:</p>
+    <p><strong>Email:</strong> <a href="mailto:com.basstaradigital@gmail.com">com.basstaradigital@gmail.com</a></p>
 
     <div class="footer">
         &copy; 2026 Basstara Digital. Hak Cipta Dilindungi Undang-Undang.
