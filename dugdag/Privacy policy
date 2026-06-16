@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - DugDag Studio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            border-bottom: 2px solid #00E5FF;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #e0f7fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #00838f;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kebijakan Privasi</h1>
+    <p><strong>Berlaku Efektif:</strong> 16 Juni 2026</p>
+    
+    <p><strong>Basstara Digital</strong> menghormati privasi Anda. Dokumen ini menguraikan secara transparan bagaimana kami mengelola informasi dan izin perangkat saat Anda menggunakan aplikasi seluler <strong>DugDag Studio</strong>.</p>
+
+    <h2>1. Pemrosesan Media Lokal (Offline-First)</h2>
+    <p>Aplikasi ini dirancang sebagai platform Digital Audio Workstation (DAW) dan rendering visualizer profesional. Seluruh pemrosesan media (pemotongan gambar, pembacaan spektrum audio, dan rendering video MP4) dieksekusi secara lokal di dalam memori internal perangkat Anda. Kami tidak pernah mengunggah, merekam, atau mentransmisikan file media maupun proyek Anda ke server eksternal.</p>
+
+    <h2>2. Izin Perangkat (Permissions) yang Digunakan</h2>
+    <p>Untuk memastikan fungsionalitas inti berjalan dengan semestinya, aplikasi memerlukan izin sistem Android berikut:</p>
+    <ul>
+        <li><span class="highlight">Penyimpanan & Media (READ_EXTERNAL_STORAGE, READ_MEDIA_AUDIO, IMAGES, VIDEO, & VISUAL_USER_SELECTED):</span> Izin ini digunakan secara ketat dan eksklusif untuk membaca aset (lagu, foto latar belakang, logo, dan font) yang Anda pilih secara sadar untuk dimasukkan ke dalam ruang kerja, serta menyimpan hasil akhir video (MP4) ke dalam Galeri perangkat Anda.</li>
+        <li><span class="highlight">Mikrofon (RECORD_AUDIO & MODIFY_AUDIO_SETTINGS):</span> Izin ini <strong>mutlak diperlukan oleh mesin perender kami (Native Render Engine)</strong> untuk mengekstrak data frekuensi gelombang suara (Fast Fourier Transform / FFT) dari lagu yang sedang diputar di dalam aplikasi. Ini berfungsi secara murni agar animasi bar atau spektrum dapat bergerak responsif terhadap ketukan lagu. Kami tidak merekam pembicaraan Anda atau menyadap suara lingkungan di sekitar perangkat Anda dalam bentuk apa pun.</li>
+        <li><span class="highlight">Akses Internet (INTERNET):</span> Aplikasi membutuhkan koneksi internet hanya untuk memverifikasi lisensi pembelian dan memuat layanan jaringan periklanan pihak ketiga.</li>
+    </ul>
+
+    <h2>3. Layanan Pihak Ketiga & Pengumpulan Data</h2>
+    <p>Meskipun file media Anda diproses secara lokal, aplikasi ini terintegrasi dengan layanan pihak ketiga resmi yang dapat mengumpulkan data pengenal anonim untuk tujuan keamanan, analitik, dan periklanan:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Aplikasi ini menayangkan iklan. Jaringan iklan Google AdMob dapat mengumpulkan data seperti Alamat IP, ID Perangkat (Advertising ID), dan interaksi klik iklan untuk menyediakan iklan yang dipersonalisasi serta menganalisis performa lalu lintas jaringan.</li>
+        <li><strong>Google Play Billing:</strong> Digunakan secara eksklusif jika Anda melakukan transaksi peningkatan lisensi (Premium Upgrade). Seluruh proses penagihan dikelola oleh Google. Kami tidak pernah menerima, memproses, atau menyimpan informasi kartu kredit dan data pembayaran Anda secara langsung.</li>
+    </ul>
+    <p>Untuk informasi lebih lanjut mengenai praktik keamanan data tersebut, silakan tinjau <a href="https://policies.google.com/privacy" target="_blank">Kebijakan Privasi Google</a>.</p>
+
+    <h2>4. Kebijakan Retensi dan Penghapusan Data (Data Deletion)</h2>
+    <p>Aplikasi ini beroperasi tanpa sistem pembuatan akun (no login required). Oleh karena itu, kami tidak memiliki basis data pengguna di server kami untuk dihapus. Semua data proyek, draf, dan file cache bersifat sementara dan tersimpan secara eksklusif di dalam memori perangkat Anda. Anda memiliki kendali penuh dan dapat menghapus seluruh data ini kapan saja dengan melakukan fungsi <strong>"Hapus Data Aplikasi" (Clear Data)</strong> melalui pengaturan sistem Android Anda, atau dengan melakukan pencopotan pemasangan (Uninstall) aplikasi.</p>
+
+    <h2>5. Perlindungan Privasi Anak (COPPA Compliance)</h2>
+    <p>DugDag Studio adalah alat penyuntingan audio dan visual tingkat lanjut yang dirancang untuk kreator konten profesional. Aplikasi ini tidak ditujukan untuk, dan tidak secara sengaja mengumpulkan informasi identitas pribadi dari, anak-anak di bawah usia 13 tahun.</p>
+
+    <h2>6. Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan mendetail mengenai praktik privasi ini atau kendala teknis, silakan hubungi tim pengembang secara langsung melalui:</p>
+    <p><strong>Email:</strong> info.basstaradigital@gmail.com </p>
+
+    <div class="footer">
+        &copy; 2026 Basstara Digital. Hak Cipta Dilindungi Undang-Undang.
+    </div>
+</div>
+
+</body>
+</html>
