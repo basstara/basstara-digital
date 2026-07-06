@@ -3,46 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - PT Basstara Digital Indonesia</title>
+    <title>PT Basstara Digital Indonesia - Official Developer Portal</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #94a3b8; margin: 0; padding: 0; line-height: 1.7; }
-        header { text-align: center; padding: 60px 20px 40px; }
-        h1 { color: #f8fafc; font-size: 2.2em; margin-bottom: 10px; font-weight: 700; }
-        .tagline { color: #cbd5e1; font-size: 1.1em; }
-        .container { max-width: 800px; margin: 0 auto 60px; padding: 0 20px; }
-        .section { background-color: #1e293b; padding: 40px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.07); }
-        h2 { color: #f1f5f9; font-size: 1.3em; margin-top: 25px; margin-bottom: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
-        p, li { margin-bottom: 15px; }
-        a { color: #60a5fa; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; background-color: rgba(59, 130, 246, 0.1); color: #60a5fa; border-radius: 8px; border: 1px solid rgba(59, 130, 246, 0.3); font-weight: 600; }
+        /* Desain Modern, Clean, & Profesional (Tech Corporate Style) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #0f172a; 
+            color: #94a3b8; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased; 
+        }
+
+        .background-glow {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1000px;
+            height: 400px;
+            background: radial-gradient(circle at top, rgba(30, 58, 138, 0.25), transparent 70%);
+            z-index: -1;
+        }
+
+        header { 
+            text-align: center; 
+            padding: 80px 20px 60px; 
+        }
+
+        h1 { 
+            color: #f8fafc; 
+            font-size: 2.8em; 
+            margin-bottom: 15px; 
+            letter-spacing: -0.03em; 
+            font-weight: 800;
+        }
+
+        .tagline { 
+            color: #cbd5e1; 
+            font-size: 1.15em; 
+            max-width: 650px; 
+            margin: 0 auto; 
+            font-weight: 400;
+        }
+
+        .badge { 
+            display: inline-block; 
+            background-color: rgba(59, 130, 246, 0.1); 
+            color: #60a5fa; 
+            padding: 6px 18px; 
+            border-radius: 9999px; 
+            font-size: 0.85em; 
+            font-weight: 600;
+            margin-top: 30px; 
+            border: 1px solid rgba(59, 130, 246, 0.25); 
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto 60px; 
+            padding: 0 20px; 
+        }
+
+        .section { 
+            background-color: #1e293b; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+            border: 1px solid rgba(255, 255, 255, 0.07); 
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .section:hover {
+            border-color: rgba(96, 165, 250, 0.3);
+        }
+
+        h2 { 
+            color: #f1f5f9; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+            padding-bottom: 15px; 
+            margin-top: 0; 
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        li strong {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .contact-info p { 
+            margin: 12px 0; 
+            font-size: 1.05em;
+            color: #cbd5e1;
+        }
+
+        .contact-info strong {
+            color: #f1f5f9;
+        }
+
+        a { 
+            color: #60a5fa; 
+            text-decoration: none; 
+            transition: color 0.2s ease;
+        }
+
+        a:hover { 
+            color: #93c5fd; 
+            text-decoration: underline; 
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            color: #64748b; 
+            font-size: 0.9em; 
+            border-top: 1px solid rgba(255, 255, 255, 0.05); 
+            margin-top: 60px; 
+        }
     </style>
 </head>
 <body>
+
+    <div class="background-glow"></div>
+
     <header>
-        <h1>Terms of Service</h1>
-        <p class="tagline">PT Basstara Digital Indonesia</p>
+        <h1>PT BASSTARA DIGITAL INDONESIA</h1>
+        <p class="tagline">Crafting premium mobile experiences and innovative multi-genre digital solutions to simplify your daily life.</p>
+        <div class="badge">✓ VERIFIED OFFICIAL DEVELOPER</div>
     </header>
+
     <div class="container">
+        
         <div class="section">
-            <p><em>Terakhir diperbarui: Juli 2026</em></p>
-            
-            <h2>1. Penerimaan Syarat</h2>
-            <p>Dengan mengunduh, menginstal, atau menggunakan aplikasi yang dikembangkan oleh PT Basstara Digital Indonesia, Anda setuju untuk terikat dengan Syarat dan Ketentuan Layanan ini. Jika Anda tidak setuju, mohon untuk tidak menggunakan aplikasi kami.</p>
-            
-            <h2>2. Lisensi Penggunaan</h2>
-            <p>Kami memberikan Anda lisensi pribadi, non-eksklusif, dan tidak dapat dialihkan untuk menggunakan aplikasi kami di perangkat seluler Anda untuk tujuan hiburan dan produktivitas pribadi, bukan untuk tujuan komersial ulang.</p>
-            
-            <h2>3. Pembatasan</h2>
-            <p>Anda dilarang merekayasa balik (reverse engineer), membongkar, memodifikasi, atau mendistribusikan ulang kode sumber aplikasi kami tanpa izin tertulis dari pihak perusahaan.</p>
-            
-            <h2>4. Penafian (Disclaimer)</h2>
-            <p>Aplikasi kami disediakan "sebagaimana adanya". Kami tidak menjamin bahwa aplikasi akan selalu bebas dari kesalahan (bug) atau gangguan teknis, meskipun kami akan terus berusaha memberikan pembaruan terbaik untuk pengguna.</p>
+            <h2>Tentang Kami (About Us)</h2>
+            <p>PT Basstara Digital Indonesia adalah studio pengembangan perangkat lunak (software development) independen yang bergerak di bidang pembuatan aplikasi seluler multi-genre berbasis Android. Kami berkomitmen untuk menghadirkan produk digital yang inovatif, aman, fungsional, dan relevan dengan kebutuhan pengguna ponsel pintar masa kini.</p>
         </div>
-        <div style="text-align: center;">
-            <a href="index.html" class="back-btn">← Kembali ke Halaman Utama</a>
+
+        <div class="section">
+            <h2>Fokus Pengembangan Aplikasi</h2>
+            <p>Sebagai pengembang dengan portofolio aplikasi yang beragam, kami merancang berbagai solusi perangkat lunak yang mencakup beberapa kategori utama:</p>
+            <ul>
+                <li><strong>Aplikasi Navigasi & Pemetaan:</strong> Mengembangkan solusi peta interaktif seperti <strong>MapsTrip</strong>, yang dirancang untuk mempermudah navigasi perjalanan pelancong maupun pengguna umum.</li>
+                <li><strong>Aplikasi Gaya Hidup & Hiburan:</strong> Aplikasi interaktif yang dirancang untuk memberikan hiburan berkualitas, pengolah konten kreatif, serta media personalisasi teks.</li>
+                <li><strong>Multimedia & Audio Tools:</strong> Pemutar multimedia dan sistem pemrosesan komponen audio digital yang memberikan pengalaman audio visual premium bagi pengguna seluler.</li>
+            </ul>
         </div>
+
+        <div class="section">
+            <h2>Informasi Kontak Resmi</h2>
+            <p>Untuk keperluan verifikasi portal, peninjauan aplikasi (App Review), serta dukungan teknis, silakan hubungi saluran komunikasi resmi kami:</p>
+            <div class="contact-info">
+                <p>📧 <strong>Email Dukungan:</strong> email.anda@gmail.com</p>
+                <p>📍 <strong>Lokasi Operasional:</strong> Bandung, Jawa Barat, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Kebijakan Hukum & Keamanan</h2>
+            <p>Kami sangat menjaga privasi dan keamanan data pengguna. Seluruh aplikasi yang kami rilis tunduk pada standar kepatuhan privasi global. Dokumen kebijakan penanganan data, syarat ketentuan penggunaan, serta komitmen perlindungan privasi dapat diakses secara transparan oleh pengguna.</p>
+            <p style="margin-top: 20px;">
+                <a href="privacy.html">Privacy Policy & Data Safety</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+        </div>
+
     </div>
+
+    <footer>
+        <p>&copy; 2026 PT Basstara Digital Indonesia. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
