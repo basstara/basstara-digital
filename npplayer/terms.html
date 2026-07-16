@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - NP Player</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+        :root {
+            --gold-light: #FFDF00;
+            --gold-main: #D4AF37;
+            --gold-dark: #996515;
+            --bg-dark: #0a0806;
+            --text-main: #FDFBF7;
+            --text-muted: #D1CFC9;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+        .orb-1, .orb-2 {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            animation: float 25s infinite alternate ease-in-out;
+        }
+        .orb-1 {
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, var(--gold-main), transparent);
+            top: -150px;
+            left: -100px;
+            opacity: 0.25;
+        }
+        .orb-2 {
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, var(--gold-dark), transparent);
+            bottom: -200px;
+            right: -100px;
+            opacity: 0.3;
+            animation-delay: -7s;
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(100px, 150px) scale(1.1); }
+            100% { transform: translate(-50px, 100px) scale(0.9); }
+        }
+        .container {
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        .glass-panel {
+            background: rgba(20, 15, 10, 0.4);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            border-radius: 32px;
+            padding: 50px;
+            border-top: 1px solid rgba(212, 175, 55, 0.5);
+            border-left: 1px solid rgba(212, 175, 55, 0.3);
+            border-right: 1px solid rgba(212, 175, 55, 0.05);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(212, 175, 55, 0.05);
+        }
+        .shiny-text {
+            background: linear-gradient(120deg, var(--gold-dark) 0%, var(--gold-main) 25%, #FFF8DC 50%, var(--gold-main) 75%, var(--gold-dark) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .last-updated {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--gold-main);
+            margin-bottom: 40px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: 10px;
+            color: var(--gold-light);
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+        .email-box {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .email-box:hover {
+            background: rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+            color: #FFF8DC;
+        }
+        a {
+            color: var(--gold-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: rgba(212, 175, 55, 0.4);
+        }
+        @media (max-width: 768px) {
+            .glass-panel { padding: 30px 20px; border-radius: 24px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.3rem; }
+            .container { margin: 30px auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb-1"></div><div class="orb-2"></div>
+    <div class="container">
+        <div class="glass-panel">
+            <h1 class="shiny-text">Terms & Conditions</h1>
+            <div class="last-updated">Last Updated: July 2026</div>
+            
+            <p>By downloading or using the <strong>NP Player</strong> app, these terms will automatically apply to you. You should make sure therefore that you read them carefully before using the app.</p>
+
+            <h2 class="shiny-text">1. License of Use</h2>
+            <p>You are not allowed to copy, modify, or redistribute the app, any part of the app, or our trademarks (Basstara Digital) in any way. You are not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages or make derivative versions.</p>
+
+            <h2 class="shiny-text">2. Third-Party & Premium Services</h2>
+            <p>Transaction services such as Premium feature purchases are managed exclusively by the official billing system of the App Store where you downloaded this application. Refund policies and subscription management are subject to the official policies of that respective App Store platform.</p>
+
+            <h2 class="shiny-text">3. Limitation of Liability</h2>
+            <p>Basstara Digital is committed to ensuring that the app is as useful and efficient as possible. However, we do not accept responsibility for hardware speaker damage, data loss, or functionality issues if the app is used beyond reasonable limits or if your device's operating system has been modified (Rooted).</p>
+
+            <h2 class="shiny-text">4. Changes to These Terms</h2>
+            <p>We may update our Terms and Conditions from time to time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
+
+            <h2 class="shiny-text">5. Contact Us</h2>
+            <p>If you have any questions regarding these Terms and Conditions, please contact us:</p>
+            <div class="email-box">
+                <a href="mailto:info.basstaradigital@gmail.com">📩 info.basstaradigital@gmail.com</a>
+            </div>
+            
+            <footer>&copy; 2026 Basstara Digital. All rights reserved.</footer>
+        </div>
+    </div>
+</body>
+</html>
