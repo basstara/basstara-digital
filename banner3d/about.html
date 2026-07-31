@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Banner 3D</title>
+    <style>
+        /* CSS SAMA PERSIS SEPERTI DI ATAS */
+        :root {
+            --glass-bg: rgba(0, 0, 0, 0.45); --text-main: #ffffff; --text-muted: #a0aec0;
+            --cyan: #00e5ff; --gold: #ffea00;
+        }
+        body {
+            margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(125deg, #ff007f, #7a00ff, #00e5ff, #ffea00, #ff007f);
+            background-size: 400% 400%; animation: LiveRainbow 12s ease-in-out infinite;
+            color: var(--text-main); display: flex; justify-content: center; align-items: center; min-height: 100vh;
+        }
+        @keyframes LiveRainbow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .container {
+            max-width: 800px; width: 100%; margin: 60px 20px; background: var(--glass-bg);
+            backdrop-filter: blur(35px); -webkit-backdrop-filter: blur(35px);
+            border: 1px solid rgba(255, 255, 255, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.4); border-left: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 32px; padding: 60px; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5); box-sizing: border-box;
+        }
+        h1 { color: var(--cyan); text-align: center; margin-top: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 4px 15px rgba(0, 229, 255, 0.4); }
+        h2 { color: var(--gold); border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 12px; margin-top: 35px; font-size: 1.3em; }
+        p, li { line-height: 1.8; color: #f1f5f9; font-size: 1.05em; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+        .footer { text-align: center; margin-top: 60px; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.95em; color: var(--text-muted); }
+        @media screen and (max-width: 768px) { .container { margin: 20px 15px; padding: 35px 25px; border-radius: 24px; } h1 { font-size: 1.8em; } h2 { font-size: 1.2em; } p, li { font-size: 0.95em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Banner 3D</h1>
+        <p style="text-align: center; color: var(--text-muted);">Mockup Maker Studio</p>
+
+        <h2>The Engine</h2>
+        <p><strong>Banner 3D</strong> is a cutting-edge pseudo-3D design utility developed by <strong>Basstara</strong>. It utilizes a highly optimized Perspective Render Engine that calculates complex mathematical matrices natively on your device. This allows you to generate spatial 3D effects elegantly without draining your device's RAM or causing performance lags.</p>
+
+        <h2>Core Features</h2>
+        <ul>
+            <li><strong>Precision Slider Engine:</strong> Provides absolute control over X, Y, and Z axes with mathematical precision.</li>
+            <li><strong>Zero-Distortion Render:</strong> Preserves the exact aspect ratio of your screenshots while projecting them into a 3D isometric environment.</li>
+            <li><strong>Anti-OOM Technology:</strong> Automatically manages high-resolution image decoding to prevent out-of-memory crashes on mid-range devices.</li>
+            <li><strong>Premium UI Glassmorphism:</strong> Designed with a sleek, distraction-free interface to boost creative focus.</li>
+        </ul>
+
+        <h2>Developer & Brand</h2>
+        <p>Crafted specifically for app developers, designers, and digital marketers, <strong>Basstara</strong> aims to simplify the creation of professional store assets and promotional banners directly from a mobile device.</p>
+
+        <div class="footer">
+            &copy; 2026 Banner 3D by Basstara Digital
+        </div>
+    </div>
+</body>
+</html>
+
