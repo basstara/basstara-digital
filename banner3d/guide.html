@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - Banner 3D</title>
+    <style>
+        :root {
+            --glass-bg: rgba(0, 0, 0, 0.45); 
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+            --cyan: #00e5ff;
+            --gold: #ffea00;
+        }
+        body {
+            margin: 0; padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(125deg, #ff007f, #7a00ff, #00e5ff, #ffea00, #ff007f);
+            background-size: 400% 400%;
+            animation: LiveRainbow 12s ease-in-out infinite;
+            color: var(--text-main);
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh;
+        }
+        @keyframes LiveRainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 800px; width: 100%;
+            margin: 60px 20px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(35px); -webkit-backdrop-filter: blur(35px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            border-left: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 32px; padding: 60px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+        }
+        h1 {
+            color: var(--cyan); text-align: center; margin-top: 0;
+            font-size: 2.5em; text-transform: uppercase; letter-spacing: 2px;
+            text-shadow: 0 4px 15px rgba(0, 229, 255, 0.4);
+        }
+        h2 {
+            color: var(--gold); border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 12px; margin-top: 35px; font-size: 1.3em;
+        }
+        p, li { line-height: 1.8; color: #f1f5f9; font-size: 1.05em; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+        .footer {
+            text-align: center; margin-top: 60px; padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.95em; color: var(--text-muted);
+        }
+        @media screen and (max-width: 768px) {
+            .container { margin: 20px 15px; padding: 35px 25px; border-radius: 24px; }
+            h1 { font-size: 1.8em; } h2 { font-size: 1.2em; } p, li { font-size: 0.95em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Use</h1>
+        <p style="text-align: center; color: var(--text-muted);">Mastering the Precision Slider Engine</p>
+
+        <h2>1. Formations & Device Models</h2>
+        <p>Start by selecting how many devices you want to display (from 1 to 7 screens). Choose your preferred device model (Notch Style, Punch Hole, Minimalist, etc.) and a 3D layout style that fits your design needs.</p>
+
+        <h2>2. Importing Images (Screenshots)</h2>
+        <p>Go to the <strong>Images</strong> tab. You can upload screenshots individually for each screen, or use the <strong>Master Sync</strong> feature (Premium) to upload a single image that automatically perfectly fills all active screens in the formation.</p>
+
+        <h2>3. 3D Positional Tuning (Sliders)</h2>
+        <p>Use the Precision Sliders in the <strong>Design</strong> tab to manipulate the 3D space. You can rotate (X, Y, Z axis), move, and scale the entire device formation. Tap on the numerical values to manually type in exact coordinates for absolute precision.</p>
+
+        <h2>4. Virtual Environment & Text</h2>
+        <p>Add depth to your banner by selecting a High-Resolution Virtual Background (or import your own custom image). You can also enable Dynamic Text Overlay, pick a color using the Spectrum Slider, and adjust its Z-Index to place it behind or in front of the devices.</p>
+
+        <h2>5. High-Resolution Export</h2>
+        <p>Once you are satisfied with the composition, tap the <strong>Export</strong> tab. The app's rendering engine will instantly generate a 100% distortion-free, high-definition PNG file saved directly to your device's gallery.</p>
+
+        <div class="footer">
+            &copy; 2026 Banner 3D by Basstara Digital
+        </div>
+    </div>
+</body>
+</html>
